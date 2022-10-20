@@ -20,8 +20,8 @@ const App = () => {
           <Route path="/" element={<Users />} />
           <Route path="/:userId/places" element={<UserPlaces />} />
           <Route path="/places/new" element={<NewPlace />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
-        <Route path="*" element={<Navigate replace to="/" />} />
       </main>
     </Router>
   );
